@@ -1,0 +1,37 @@
+ html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+#flower_text {
+  font-family: sans-serif;
+  font-size: 15vw;
+  font-weight: bold;
+  fill: url(#pattern1);
+}
+#testrect {
+  mask: url(#textMask);
+  animation: a1 20s infinite linear;
+  transform-origin: 50% 50%;
+}
+#textMask {
+  text {
+    font-size: 100px;
+    font-family: arial black;
+  }
+}
+#pattern1 {
+  image {
+    transform-origin: 50% 50%;
+    animation: a1 20s infinite linear;
+  }
+}
+
+@keyframes a1 {
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+#pattern_chooser {
+  margin: 20px;
+}

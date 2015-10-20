@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <select id="pattern_chooser">
+  <option value="0">hippie</option>
+  <option value="1">red</option>
+  <option value="2">wallpaper</option>
+  <option value="3">pink daisy</option>
+</select>
+<svg id="text" width=100% height=500>
+  <defs>
+    <pattern id="pattern1" x="0" y="0" patternUnits="userSpaceOnUse">
+      <rect width=600 height=600 fill="#fff" top="0" left="0" />
+      <image xlink:href=""  />
+    </pattern>
+    <!--mask id="textMask" maskUnits="objectBoundingBox">    
+      <text x="0" y="380" fill="#fff">хуй</text>
+    </mask-->
+  </defs>
+  <text id="flower_text" y=200 x=0 fill="#fff">Flower power</text>
+  <!--image xlink:href="http://previews.123rf.com/images/antonovaolena/antonovaolena1401/antonovaolena140100068/25184272-Spring-floral-wallpaper-Stock-Vector-hippie.jpg" width="200" height="200" y=300 x=0 id="testrect"/-->
+</svg>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
